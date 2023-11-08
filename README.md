@@ -14,6 +14,130 @@
 
 # Problem Description: 
 For our first MIST 4610 group project, we are tasked with constructing a data model and building a corresponding database, populating it with data, and formulating 10 SQL queries that are relevant from a managerial perspective. We have chosen to work with ChatGPT, a simulated client, to develop our project scenario. ChatGPT has been asked to act as the owner/operator of a tennis club in need of a relational database. Through interactions with ChatGPT, we aim to extract information about the tennis club's operations and business processes, enabling us to create a robust data model. The model should consist of at least 12-15 entities, with appropriate attributes and relationships between them. To ensure comprehensive documentation and collaboration, every team member is required to construct and maintain a GitHub repository containing details of the group project's progress. The resulting database and SQL queries should serve the managerial needs of the tennis club, enhancing its operations and decision-making processes. This initiative aims to tackle the complex administrative challenges faced by the club and enable more efficient organization, planning, and communication across all facets of its operation.
+
+# ChatGPT Log:*
+Pretend you are the owner/operator of a tennis (or football, soccer - your choice) club needing to build a relational database. You hired some students from the MIST 4610 class at the University of Georgia to create the database for you. They need to know more about your organization to identify which entities, attributes, and relationships are important for you. Start by describing your business as a real client Be as clear and exact as possible. Make sure that each entity is unique.
+
+ChatGPT:
+
+As the owner/operator of a tennis club, I want to create a relational database to efficiently manage and organize the various aspects of our club's operations. Our tennis club, named "AceHaven Tennis Club," is a prominent and well-established organization located in Athens, Georgia. We provide tennis enthusiasts of all ages and skill levels with high-quality facilities and programs. Our primary goal is to promote the sport of tennis and foster a strong sense of community among our members.
+Here's an overview of our club:
+Members: Our club has a diverse membership base, including junior players, adults, and seniors. Each member has a unique membership ID, and we need to store their personal information, such as name, contact details, date of birth, and emergency contact information.
+Coaches: We employ experienced tennis coaches who provide coaching services to our members. Each coach has a unique coach ID, and we need to maintain their contact information, qualifications, and availability.
+Courts: We have several tennis courts of different types, such as clay, grass, and hard courts. Each court has a unique identifier, and we need to track its availability, maintenance schedule, and any special booking requirements.
+Booking and Reservations: Members can book tennis courts for specific time slots. We need to record the reservations, including the date, time, court number, and the member making the reservation.
+Tournaments and Events: We host tennis tournaments and events throughout the year. These events have details such as event name, date, location, and participating players or teams.
+Payments and Invoices: We need to keep track of member payments, including membership fees, coaching fees, and tournament entry fees. Each payment should be associated with a member and a specific transaction date.
+Equipment and Pro Shop: Our club also operates a pro shop where members can purchase tennis equipment and apparel. We need to maintain an inventory of items, including their names, prices, and quantities in stock.
+Maintenance and Repairs: Regular maintenance is essential for our tennis courts. We need to track maintenance schedules, service providers, and any repairs carried out.
+Interactions: We want to keep a log of interactions between members and coaches, such as coaching sessions, feedback, and performance improvements. This will help us evaluate and enhance our coaching services.
+Employee Information: For administrative purposes, we employ staff members for various roles, including front desk staff, maintenance personnel, and management. We need to keep records of their employment details.
+Feedback and Surveys: Gathering feedback from members about their experiences and preferences is crucial. We want to maintain records of feedback and conduct periodic surveys.
+Member Attendance: We need to track the attendance of members in coaching sessions, events, and tournaments.
+The relationships between these entities will be crucial to the efficient functioning of the club. The MIST 4610 class students should focus on designing a robust database schema that allows for easy data retrieval, updates, and reporting. They should also consider implementing data integrity constraints to maintain data accuracy and consistency. Finally, security measures should be put in place to protect sensitive member information.
+
+
+
+Team: Be more specific about 4, 6, 7, 8, and 11
+
+Certainly, let's provide more specific details for entities 4, 6, 7, 8, and 11:
+Booking and Reservations:
+Reservation ID: A unique identifier for each reservation.
+Member ID: A reference to the member making the reservation.
+Court ID: A reference to the tennis court being reserved.
+Date and Time: The date and time of the reservation.
+Duration: The duration of the reservation.
+Status: Whether the reservation is pending, confirmed, or canceled.
+Payments and Invoices:
+Payment ID: A unique identifier for each payment transaction.
+Member ID: A reference to the member making the payment.
+Payment Date: The date of the payment.
+Payment Type: The type of payment (membership fee, coaching fee, tournament fee, etc.).
+Amount: The amount paid.
+Invoice ID: A reference to the corresponding invoice, if applicable.
+Equipment and Pro Shop:
+Item ID: A unique identifier for each item in the pro shop.
+Item Name: The name of the item (e.g., tennis racket, tennis balls, apparel).
+Price: The price of the item.
+Quantity in Stock: The number of items currently in stock.
+Description: A brief description of the item.
+Maintenance and Repairs:
+Maintenance ID: A unique identifier for each maintenance or repair task.
+Court ID: A reference to the tennis court that required maintenance.
+Maintenance Date: The date when maintenance or repair was performed.
+Service Provider: The company or individual responsible for the maintenance.
+Description: Details about the maintenance or repair work done.
+Feedback and Surveys:
+Feedback ID: A unique identifier for each feedback entry.
+Member ID: A reference to the member providing feedback.
+Date: The date the feedback was given.
+Type: The type of feedback (coaching feedback, general feedback, survey response, etc.).
+Content: The content of the feedback or survey response.
+Rating: If applicable, a rating provided by the member.
+These additional details help to clarify the structure of these specific entities and provide a clearer picture of what data should be stored and how it should be organized. It is crucial for the MIST 4610 class students to define the relationships and constraints between these attributes to ensure the integrity and functionality of the database.
+
+
+TEAM: what is the relationship between coaches and members
+
+
+The relationship between coaches and members in the database for AceHaven Tennis Club involves a many-to-many association, as multiple members can be coached by multiple coaches, and coaches can have multiple members as their clients. To represent this relationship, you can use an intermediary table or entity, often referred to as a junction or association table. Let's call this table "CoachMemberAssociation."
+Here's how you can set up the relationship:
+Coaches Entity:
+Coach ID (Primary Key)
+Name
+Contact Information
+Qualifications
+Availability
+Members Entity:
+Member ID (Primary Key)
+Name
+Contact Information
+Date of Birth
+Emergency Contact Information
+CoachMemberAssociation Entity:
+Association ID (Primary Key)
+Coach ID (Foreign Key referring to Coach Entity)
+Member ID (Foreign Key referring to Members Entity)
+Coaching Start Date: The date when the coaching relationship started.
+In this structure:
+Each record in the "CoachMemberAssociation" table represents a specific coaching relationship between a coach and a member.
+A coach can be associated with multiple members by having multiple records in the "CoachMemberAssociation" table with the same "Coach ID."
+Similarly, a member can be associated with multiple coaches by having multiple records in the "CoachMemberAssociation" table with the same "Member ID."
+This design allows you to track the coaching relationships between coaches and members, including when they started coaching and which members are being coached by which coaches. It's a flexible way to manage coaching relationships while maintaining data integrity.
+
+Team: what attributes do Feedback and Surveys have?
+Feedback and Surveys are essential for gathering information about member experiences and preferences. Here are the attributes you can include for both Feedback and Surveys:
+Feedback Entity:
+Feedback ID: A unique identifier for each feedback entry (Primary Key).
+Member ID: A reference to the member providing feedback (Foreign Key to the Members Entity).
+Date: The date when the feedback was provided.
+Type: The type of feedback, which can be categorized as coaching feedback, general feedback, event feedback, etc.
+Content: The actual content of the feedback, where the member can provide detailed comments and suggestions.
+Rating: If applicable, a numerical rating (e.g., on a scale of 1 to 5) given by the member.
+Response: An optional field to record any response or action taken by the club in response to the feedback.
+Status: Indicates whether the feedback is pending, resolved, or in progress.
+Surveys Entity:
+Survey ID: A unique identifier for each survey (Primary Key).
+Survey Name: A name or title for the survey.
+Description: A brief description of the survey's purpose or topic.
+Date Started: The date when the survey was initiated.
+Date Ended: The date when the survey is closed or the last day for responses.
+Survey Questions: A list of questions associated with the survey, each with attributes like:
+Question ID: A unique identifier for each question within the survey.
+Question Text: The actual question presented to the members.
+Question Type: The type of question (multiple choice, open-ended, rating scale, etc.).
+Options: If the question is multiple choice, a list of answer options.
+Required: A flag to indicate whether answering the question is mandatory.
+Responses: A table or entity to store member responses to the survey, including:
+Response ID: A unique identifier for each response.
+Member ID: A reference to the member who provided the response.
+Survey ID: A reference to the survey the response corresponds to.
+Question ID: A reference to the specific survey question being answered.
+Response Data: The actual response provided by the member (text, selected option, rating, etc.).
+By including these attributes for Feedback and Surveys, the database can effectively capture and manage member feedback, responses to surveys, and any related actions or follow-ups. This information can be invaluable for improving club services and understanding member preferences.
+
+*Disclaimer: We discussed the ChatGPT logs with our Professor, and our Professor ultimately overruled some of the things ChatGPT told us to do because some of it didn't make sense. 
+
 # Data Model
 ![image](https://github.com/SpaMnky/2378/assets/131407808/11d65999-9ce2-4ca1-9c8a-aa958a88275a)
 
