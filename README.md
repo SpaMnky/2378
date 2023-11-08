@@ -1,4 +1,4 @@
-# 2378
+
 # MIST 4610 SQL PROJECT 1 
 # Team Name: cs_g2p1
 # Team Members:
