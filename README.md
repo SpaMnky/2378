@@ -110,6 +110,18 @@ Feedback is an important metric to measure within our tennis club. By finding ou
 
 By showing which member in the club has competed in the most tournaments, we are able to see which of our players is the most competitive in our league. This is important because tournaments allow for us to draw more recognition to our club. By gaining more recognition, we are able to acquire more members and ultimately gain more revenue for the club.
 
+9. Query 9 List the names of the members who have more than one court reservation and the type of court that the reservation is for.
+
+![image](https://github.com/SpaMnky/2378/assets/131407808/4de1216a-80b4-4bbe-b706-b062b3098657)
+
+This query allows for the tennis club to know who their most active members are and which court they prefer to play on. The query is telling us that these three members have more than one reservation on that specific type of court. The club may use this information to give out discounts to these three members at the shop for contributing the most to the club. They could also use this information to figure out which type of court is popular, so if the club is to invest in more courts they would know what to build more of since it is more popular.
+
+10. Query 10 List the name and date of when each member made their payment towards the club.
+
+![image](https://github.com/SpaMnky/2378/assets/131407808/1a1384f4-7a07-4798-9933-372fbab483a1)
+
+This query will tell the tennis club when each member makes their payments. This would allow them to know who is behind on payments, who has missed a payment, and who has paid their dues. This way they know who is technically still a member and who isn’t if they were to stop making the payments towards the club. Since the total amount is all the same for all members and they must pay the same each time, then there isn’t a need for the total amount as it is $800 for each member each time they make a payment.
+
 # Database information:
 Name of the database: cs_g2p1
 
