@@ -57,7 +57,6 @@ Finally, maintenance of the courts is handled by our maintenance staff. This rel
 ![image](https://github.com/SpaMnky/2378/assets/131407808/39787508-4305-40e4-8c1a-c02346eb1a1e)
 ![image](https://github.com/SpaMnky/2378/assets/131407808/d30d307e-7385-486d-a820-d29c99749761)
 ![image](https://github.com/SpaMnky/2378/assets/131407808/f82641bb-2b03-466b-bb87-7df7ba7e3140)
-![image](https://github.com/SpaMnky/2378/assets/131407808/4a3dc562-3797-4a3a-b1d3-00a121f6f154)
 ![image](https://github.com/SpaMnky/2378/assets/131407808/b9df9c07-b367-4cb0-b6a5-7f2f53fb488b)
 ![image](https://github.com/SpaMnky/2378/assets/131407808/191a6a0e-b04f-461d-93e3-e88fd7114dc4)
 
