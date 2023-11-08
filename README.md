@@ -112,4 +112,5 @@ By showing which member in the club has competed in the most tournaments, we are
 
 # Database information:
 Name of the database: cs_g2p1
+
 Additional information: Each query listed above is stored in the database using procedures which can be called using this format: CALL Q1() (Replace 1 with any number between 1-10 to represent each query)
