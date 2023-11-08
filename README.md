@@ -2,15 +2,15 @@
 # MIST 4610 SQL PROJECT 1 
 # Team Name: cs_g2p1
 # Team Members:
-1. Thommy Chhim @SpaMnky [Username](https://github.com/username)
+1. Thommy Chhim [@SpaMnky](https://github.com/SpaMnky)
 
-2. Vasil Gerchev @vgg01171 [Username](https://github.com/username)
+2. Vasil Gerchev [@vgg01171](https://github.com/vgg01171)
 
-3. Robert You @PointBrok3n [Username](https://github.com/username)
+3. Robert You [@PointBrok3n](https://github.com/PointBrok3n)
 
-4. Brian Ferro @baf64312 [Username](https://github.com/username)
+4. Brian Ferro  [@baf64312](https://github.com/baf64312)
 
-5. Nathan Rockwell @nathanrockwell [nathanrockwell](https://github.com/nathanrockwell)
+5. Nathan Rockwell [@nathanrockwel](https://github.com/nathanrockwel)
 
 # Problem Description: 
 For our first MIST 4610 group project, we are tasked with constructing a data model and building a corresponding database, populating it with data, and formulating 10 SQL queries that are relevant from a managerial perspective. We have chosen to work with ChatGPT, a simulated client, to develop our project scenario. ChatGPT has been asked to act as the owner/operator of a tennis club in need of a relational database. Through interactions with ChatGPT, we aim to extract information about the tennis club's operations and business processes, enabling us to create a robust data model. The model should consist of at least 12-15 entities, with appropriate attributes and relationships between them. To ensure comprehensive documentation and collaboration, every team member is required to construct and maintain a GitHub repository containing details of the group project's progress. The resulting database and SQL queries should serve the managerial needs of the tennis club, enhancing its operations and decision-making processes. This initiative aims to tackle the complex administrative challenges faced by the club and enable more efficient organization, planning, and communication across all facets of its operation.
