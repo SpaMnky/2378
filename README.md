@@ -37,6 +37,25 @@ Explanation of the data model:
 1. Query 1 Lists the full names and salaries of all staff at AceHaven Tennis Club who make more than the average salary of all staff. It accomplishes this by comparing each staff member's salary to the subquery's result, which calculates the average salary.
 ![image](https://github.com/SpaMnky/2378/assets/131407808/9ab625ff-51e0-4948-8ad8-6c7f7c6b3955)
 The query empowers the manager to pinpoint staff members with above-average salaries, facilitating crucial decisions regarding performance recognition, budget allocation, salary fairness, and strategic staff management at AceHaven Tennis Club. These insights translate to more efficient operations and a satisfied, motivated workforce.
+2. Query 2
+3. Query 3 Shows a list of all members who made a payment, including their ID, names, contact information, payment type, and amount. Show only payments in the latest month.
+![image](https://github.com/SpaMnky/2378/assets/131407808/0b81e929-170d-4f4c-b36c-47e5bd0da0d1)
+By showing the information of members who have made the latest payment, we can check them off. Furthermore, we can collect data on what type of payment members usually use.  Also, we can see which members still need to pay their monthly fees and then contact those accordingly.
+4. Query 4 Shows a list of all tennis tournaments, including the tournament name, date, location, and the name of members who have registered. Additionally for each member, it displays their information. Only include tournaments with more than 2 registered members.
+![image](https://github.com/SpaMnky/2378/assets/131407808/7981a32f-5b95-4502-8dc7-db8a889689f9)
+By showing the list of tournaments with teams of 2 competing, we can see which tournaments are teams and not singles. Furthermore, we can see the location and which open these types of tournaments are. Also, we can see the information of the players registered to compete in the tournaments together.
+5. Query 5 Retrieves and lists the item names and their total quantity sold, excluding items with a total quantity sold less than or equal to one, and presents them in descending order of total quantity sold.
+![image](https://github.com/SpaMnky/2378/assets/131407808/d1b3891a-467b-4e5f-8006-99a1b9426853)
+Query 5 is important because it provides us insight into which of our items is most popular or which sells the most out of our inventory. This will help the tennis club identify which products are in exceptionally high demand, which can help us make informed inventory management decisions, such as adjusting pricing, marketing, or stocking strategies. Additionally, by excluding those with low sales, we can focus on the more popular products.
+6. Query 6  Retrieves the first name, last name, and member ID of customers, along with the total transaction amount and transaction date, for transactions with a total amount greater than 100 and a transaction date after '2023-01-01,' ordered by the total amount in descending order.
+![image](https://github.com/SpaMnky/2378/assets/131407808/f4aa3d29-8958-4e95-9c61-82a89183b7fe)
+Query 6 is important to a manager as it provides a comprehensive view of high-value transactions within a specific time frame. By listing the member names, transaction totals, and dates, the manager can quickly identify and analyze substantial transactions and the members making them. This information is essential for tracking revenue, identifying valuable customers, and making data-driven decisions to optimize business strategies and customer relationships.
+7. Query 7 shows which members gave an average feedback rating that was higher than the average rating of all feedback. Lists the ID, first name, last name, and average feedback rating for each member whos feedback average was higher than the overall average.
+![image](https://github.com/SpaMnky/2378/assets/131407808/2e2ef802-b5ee-4e88-aa51-e294f70f00dc)
+Feedback is an important metric to measure within our tennis club. By finding out which members consistently provided good feedback, we may be able to find similarities between these members and see why they were above average with the feedback they provided. This will allow us to make connections as to why they were more satisfied with our club, which will give us a chance to improve the experience for all of our members.
+8. Query 8 shows which member of the club has been most active in competitions. This query will show the members first name, last name, ID, and the amount of tournaments that they have competed in.
+![image](https://github.com/SpaMnky/2378/assets/131407808/a777ad31-d797-4e2b-9e91-03f214d30cee)
+By showing which member in the club has competed in the most tournaments, we are able to see which of our players is the most competitive in our league. This is important because tournaments allow for us to draw more recognition to our club. By gaining more recognition, we are able to acquire more members and ultimately gain more revenue for the club.
 
 # Database information:
 Name of the database: cs_g2p1
