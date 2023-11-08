@@ -63,6 +63,9 @@ Finally, maintenance of the courts is handled by our maintenance staff. This rel
 
 
 # Queries:
+
+![image](https://github.com/SpaMnky/2378/assets/131407808/53126b5a-e574-4b46-ae31-d536dcdc83e0)
+
 1. Query 1 Lists the full names and salaries of all staff at AceHaven Tennis Club who make more than the average salary of all staff. It accomplishes this by comparing each staff member's salary to the subquery's result, which calculates the average salary.
 
 ![image](https://github.com/SpaMnky/2378/assets/131407808/9ab625ff-51e0-4948-8ad8-6c7f7c6b3955)
