@@ -15,7 +15,7 @@
 # Problem Description: 
 For our first MIST 4610 group project, we are tasked with constructing a data model and building a corresponding database, populating it with data, and formulating 10 SQL queries that are relevant from a managerial perspective. We have chosen to work with ChatGPT, a simulated client, to develop our project scenario. ChatGPT has been asked to act as the owner/operator of a tennis club in need of a relational database. Through interactions with ChatGPT, we aim to extract information about the tennis club's operations and business processes, enabling us to create a robust data model. The model should consist of at least 12-15 entities, with appropriate attributes and relationships between them. To ensure comprehensive documentation and collaboration, every team member is required to construct and maintain a GitHub repository containing details of the group project's progress. The resulting database and SQL queries should serve the managerial needs of the tennis club, enhancing its operations and decision-making processes. This initiative aims to tackle the complex administrative challenges faced by the club and enable more efficient organization, planning, and communication across all facets of its operation.
 
-# ChatGPT Log:*
+# ChatGPT Log: *
 Team: Pretend you are the owner/operator of a tennis (or football, soccer - your choice) club needing to build a relational database. You hired some students from the MIST 4610 class at the University of Georgia to create the database for you. They need to know more about your organization to identify which entities, attributes, and relationships are important for you. Start by describing your business as a real client Be as clear and exact as possible. Make sure that each entity is unique.
 
 ChatGPT:
@@ -39,6 +39,8 @@ The relationships between these entities will be crucial to the efficient functi
 
 
 Team: Be more specific about 4, 6, 7, 8, and 11
+
+ChatGPT: 
 
 Certainly, let's provide more specific details for entities 4, 6, 7, 8, and 11:
 Booking and Reservations:
@@ -79,6 +81,7 @@ These additional details help to clarify the structure of these specific entitie
 
 TEAM: what is the relationship between coaches and members
 
+ChatGPT: 
 
 The relationship between coaches and members in the database for AceHaven Tennis Club involves a many-to-many association, as multiple members can be coached by multiple coaches, and coaches can have multiple members as their clients. To represent this relationship, you can use an intermediary table or entity, often referred to as a junction or association table. Let's call this table "CoachMemberAssociation."
 Here's how you can set up the relationship:
@@ -106,6 +109,8 @@ Similarly, a member can be associated with multiple coaches by having multiple r
 This design allows you to track the coaching relationships between coaches and members, including when they started coaching and which members are being coached by which coaches. It's a flexible way to manage coaching relationships while maintaining data integrity.
 
 Team: what attributes do Feedback and Surveys have?
+
+ChatGPT: 
 
 Feedback and Surveys are essential for gathering information about member experiences and preferences. Here are the attributes you can include for both Feedback and Surveys:
 Feedback Entity:
