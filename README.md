@@ -8,7 +8,7 @@
 
 3. Robert You [@PointBrok3n](https://github.com/PointBrok3n)
 
-4. Brian Ferro  [@baf64312](https://github.com/baf64312)
+4. Brian Ferro  [@dinough](https://github.com/dinough)
 
 5. Nathan Rockwell [@nathanrockwel](https://github.com/nathanrockwel)
 
