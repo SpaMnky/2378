@@ -18,6 +18,28 @@ For our first MIST 4610 group project, we are tasked with constructing a data mo
 ![image](https://github.com/SpaMnky/2378/assets/131407808/11d65999-9ce2-4ca1-9c8a-aa958a88275a)
 
 Explanation of the data model: 
+Our model is structured around a hypothetical tennis club named "Ace Haven." This club is represented in our database through the "Club" table, which serves as a central reference point for various other tables in our model. The "Club" table is primarily identified by its name and includes additional information such as its founding date and address.
+
+The key relationships in our model revolve around the "Club" table. Firstly, there is a one-to-many (1:m) relationship between the "Club" and "Member" tables, reflecting the fact that our club comprises numerous members. Similarly, there is a 1:m relationship between the "Club" and "Courts" tables, as our club features multiple tennis courts. Additionally, our club operates a "ProShop," and this is represented by a one-to-one (1:1) relationship.
+
+Feedback is another important aspect of our club's operation. Members can provide feedback, and this relationship is represented by a 1:m connection between the "Member" and "Feedback" tables. 
+
+Members are not only linked to feedback but also associated with teams. This is achieved through a many-to-many relationship, involving the "Team" and "TeamAssignment" tables. In the "Team" table, we track attributes like team ID and name. Teams can also register for tournaments through a many-to-many connection with the "Tournaments" table, identified as "TouRegistration." This relationship tracks the tournament ID, team ID, registration status, and date of registration.
+
+The "Tournaments" table itself is characterized by attributes such as tournament ID, name, date, and location.
+
+Members make payments during their membership, and this relationship is captured through a 1:m connection between the "Member" and "Payment" tables. The "Payment" table is identified by a payment ID and includes details like payment amount, date, and payment type.
+
+Members can also make reservations for courts, and this is represented as a many-to-many relationship between the "Member" and "Courts," specifically the "Reservations" table. This relationship tracks court ID, member ID, reservation ID, and reservation date.
+
+Members can purchase equipment from the Pro Shop, which is identified by the name "Fairway Fields" and includes an additional attribute, the phone number. The "Equipment" table is associated with the Pro Shop through a 1:m relationship and includes attributes like equipment name, price, description, and quantity in stock, as well as an ID.
+
+Transactions made by members are recorded in the "Transaction" table, which is identified by a transaction ID and includes the transaction date. Furthermore, there is a "transactionDetails" table, which captures details like quantity bought and is identified by its ID, item, and transaction ID.
+
+Our club employs various staff members, and this is depicted through a 1:m relationship between the "Club" and "Staff" tables. Staff members are identified by their staff ID, and we track their name, salary, and whether they hold a managerial position. This managerial status is represented through a one-to-one recursive relationship.
+
+Finally, maintenance of the courts is handled by our maintenance staff. This relationship is established as a many-to-many connection between the "Courts" table, identified by its ID and Club, and the "Maintenance" table. The "Maintenance" table includes attributes such as maintenance ID, staff ID, court ID, and details, along with the maintenance date.
+
 
 # Data Dictionary: 
 
