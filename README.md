@@ -34,6 +34,9 @@ Explanation of the data model:
 ![image](https://github.com/SpaMnky/2378/assets/131407808/191a6a0e-b04f-461d-93e3-e88fd7114dc4)
 
 # Queries:
+1. Query 1 Lists the full names and salaries of all staff at AceHaven Tennis Club who make more than the average salary of all staff. It accomplishes this by comparing each staff member's salary to the subquery's result, which calculates the average salary.
+![image](https://github.com/SpaMnky/2378/assets/131407808/9ab625ff-51e0-4948-8ad8-6c7f7c6b3955)
+The query empowers the manager to pinpoint staff members with above-average salaries, facilitating crucial decisions regarding performance recognition, budget allocation, salary fairness, and strategic staff management at AceHaven Tennis Club. These insights translate to more efficient operations and a satisfied, motivated workforce.
 
 # Database information:
 Name of the database: cs_g2p1
