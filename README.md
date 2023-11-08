@@ -33,4 +33,4 @@ Explanation of the data model:
 
 # Database information:
 Name of the database: cs_g2p1
-Additional information: Each quuery llisted aboved is stored in the databsed using procedures which can be called using this format: CALL ?????
+Additional information: Each query listed above is stored in the database using procedures which can be called using this format: CALL ?????
