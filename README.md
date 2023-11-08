@@ -200,7 +200,7 @@ The query empowers the manager to pinpoint staff members with above-average sala
 
 2. Query 2 lists the club members by their first and last names and number of reservations in the last three months. It then orders the result by number of reservations in descending order.
 
-![image](https://github.com/SpaMnky/2378/assets/131407808/ab6fbc74-f299-42d8-b148-1c6e09daa593)
+![image](https://github.com/SpaMnky/2378/assets/131407808/fabd2fb2-1829-4642-97bb-886d9665cbe5)
 
 This query helps the manager pinpoint loyal, engaged members for recognition and rewards, aiding resource allocation and data-driven decision-making. It keeps the club competitive by optimizing services and enhancing member satisfaction and retention.
 
