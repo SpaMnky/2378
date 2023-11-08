@@ -18,6 +18,7 @@ For our first MIST 4610 group project, we are tasked with constructing a data mo
 ![image](https://github.com/SpaMnky/2378/assets/131407808/11d65999-9ce2-4ca1-9c8a-aa958a88275a)
 
 Explanation of the data model: 
+
 Our model is structured around a hypothetical tennis club named "Ace Haven." This club is represented in our database through the "Club" table, which serves as a central reference point for various other tables in our model. The "Club" table is primarily identified by its name and includes additional information such as its founding date and address.
 
 The key relationships in our model revolve around the "Club" table. Firstly, there is a one-to-many (1:m) relationship between the "Club" and "Member" tables, reflecting the fact that our club comprises numerous members. Similarly, there is a 1:m relationship between the "Club" and "Courts" tables, as our club features multiple tennis courts. Additionally, our club operates a "ProShop," and this is represented by a one-to-one (1:1) relationship.
