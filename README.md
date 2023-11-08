@@ -56,9 +56,9 @@ Finally, maintenance of the courts is handled by our maintenance staff. This rel
 ![image](https://github.com/SpaMnky/2378/assets/131407808/6af27ae1-1644-4bce-809b-c4e8f84dc541)
 ![image](https://github.com/SpaMnky/2378/assets/131407808/39787508-4305-40e4-8c1a-c02346eb1a1e)
 ![image](https://github.com/SpaMnky/2378/assets/131407808/d30d307e-7385-486d-a820-d29c99749761)
-![image](https://github.com/SpaMnky/2378/assets/131407808/f82641bb-2b03-466b-bb87-7df7ba7e3140)
-![image](https://github.com/SpaMnky/2378/assets/131407808/b9df9c07-b367-4cb0-b6a5-7f2f53fb488b)
-![image](https://github.com/SpaMnky/2378/assets/131407808/191a6a0e-b04f-461d-93e3-e88fd7114dc4)
+![image](https://github.com/SpaMnky/2378/assets/131407808/68d1b130-b6ab-46e5-b376-992b2e261d27)
+![image](https://github.com/SpaMnky/2378/assets/131407808/c65b1d35-355b-46ba-98ce-70ce70e7e6b5)
+![image](https://github.com/SpaMnky/2378/assets/131407808/9f084612-f223-4a13-8774-4e8cfba5156d)
 
 # Queries:
 1. Query 1 Lists the full names and salaries of all staff at AceHaven Tennis Club who make more than the average salary of all staff. It accomplishes this by comparing each staff member's salary to the subquery's result, which calculates the average salary.
